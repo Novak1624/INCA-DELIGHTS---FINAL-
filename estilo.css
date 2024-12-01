@@ -1,0 +1,295 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 60px; /* Márgenes gruesos entre las secciones */
+    padding: 60px 0;   /* Espaciado interno (padding) */
+    background-color: #afeeea;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #121314;
+    margin-bottom: 30px;
+}
+
+/* Animación de Carga */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 142, 68, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #43348e; /* Cambiar a un color oscuro para que los enlaces sean visibles */
+}
+
+/* Estilo para los enlaces */
+.navbar-nav .nav-link {
+    color: rgb(183, 190, 148) !important; /* Color claro para los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12 !important; /* Color para el hover */
+}
+
+/* Slider (Carrusel) - Reducir el ancho máximo de la imagen */
+.carousel-inner img {
+    width: 100%;        /* Ajuste para que ocupe el 100% del contenedor */
+    max-width: 800px;   /* Establece un máximo de ancho (ajústalo si es necesario) */
+    height: 200px;      /* Ajusta la altura según tu preferencia */
+    object-fit: cover;  /* Mantiene la relación de aspecto de la imagen */
+    margin: 0 auto;     /* Centra la imagen en el contenedor */
+}
+
+/* Sección "Acerca de Nosotros" */
+#acerca {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.acerca-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título principal de la sección */
+#acerca h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Párrafos generales */
+.acerca p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Resaltar partes importantes */
+.destacado {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #3498db;
+}
+
+.mision {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+/* Resaltar palabras clave */
+.resaltado {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Aplicar negrita en los ingredientes */
+strong {
+    color: #9b59b6;
+    font-weight: bold;
+}
+
+/* Espaciado y márgenes */
+.acerca-container p {
+    margin-bottom: 30px;
+}
+
+/* Fondo de la sección */
+#acerca {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+section#productos {
+    background-color: #8aa5b1;
+}
+
+section#contacto {
+    background-color: #6e9570;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Card de Productos */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Formulario de Contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2c3e50;
+}
+
+/* Mensaje de Éxito en el Formulario */
+#formMessage {
+    padding: 15px;
+    background-color: #28a745;
+    color: rgb(127, 27, 27);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón de "Volver arriba" */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #34495e;
+    color: rgb(12, 12, 12);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backToTopBtn:hover {
+    background-color: #2c3e50;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #acdeab;
+    color: rgb(26, 25, 24);
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos de Responsividad */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    #backToTopBtn {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
+/* Nuevos estilos para las pestañas (Ver más) y contenido adicional */
+
+/* Estilos de las pestañas */
+.nav-tabs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.nav-tabs .nav-item {
+    margin: 0 5px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Contenido de las pestañas */
+.tab-content {
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+/* Mostrar y ocultar contenido adicional */
+/* Mostrar y ocultar contenido adicional */
+.collapse {
+    display: block;  /* Asegura que el contenido no esté oculto por defecto */
+    height: 0;
+    overflow: hidden; /* Oculta el contenido cuando está cerrado */
+    transition: height 0.5s ease; /* Transición suave para abrir/cerrar */
+    max-height: 500px; /* Establece un límite máximo para la altura, ajusta según sea necesario */
+}
+
+.collapse.show {
+    height: auto; /* Al abrirse, la altura será auto-ajustada al contenido */
+}
+
+/* Animación para el botón de "Ver más" */
+.btn-primary {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
